@@ -1,5 +1,6 @@
 # discord-server-backup
 to have a file of your server
+READ THE UPDATED README.md
 ///////////////////NOTE THIS IS A .js THE NEXT WILL BE .json
 
 const { Client, GatewayIntentBits, MessageEmbed } = require('discord.js');
