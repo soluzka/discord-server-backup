@@ -2,6 +2,19 @@
 to have a file of your server
 READ THE UPDATED README.md
 YOU CAN USE MY REGEX TO BLOCK ALL WORDS AND MAKE SERVER UNABLE TO TEXT BY PUTING IT IN BLOCKED NAMES FOR OTHER USERS AND EVEN MAKE PEOPLE LEAVE BY DOING THE SERVER ONBOARDING AND MAKING IT SO THEY HAVE TO TEXT IN A CHANNEL THEN HAVING TO DM YOU TO GET A SPECIAL ROLE HERE IS THE REGEX 
+///////////////////NOTE THIS IS MY REGEX FOR DISCORD
+
+^.*([A-Za-z0-9]+( [A-Za-z0-9]+)+).*[A-Za-z]+.*$
+^<#(?<id>\d{17,20})>$
+(?<subdomain>\w+)\.?(?<hostname>dis(?:cord)?(?:app|merch|status)?)\.(?<tld>com|g(?:d|g|ift)|(?:de(?:sign|v))|media|new|store|net)
+[a4]?+\s*[b8]+\s*c+\s*d+\s*[e3]?+\s*f+\s*[g9]+\s*h+\s*[i1l]?+\s*j+\s*k+\s*[l1i]+\s*(m|nn|rn)+\s*n+\s*[o0]?+\s*p+\s*q+\s*r+\s*[s5]+\s*[t7]+\s*[uv]?+\s*v+\s*(w|vv|uu)+\s*x+\s*y+\s*z+\s*0+\s*9+\s*8+\s*7+\s*6+\s*5+\s*4+\s*3+\s*2+\s*1+
+^https?:\/\/
+^<@&(?<id>\d{17,20})>$
+^<@!?(?<id>\d{17,20})>$
+^wss?:\/\/
+(?<url>^https:\/\/(?:(?:canary|ptb).)?discord(?:app)?.com\/api(?:\/v\d+)?\/webhooks\/(?<id>\d+)\/(?<token>[\w-]+)\/?$)
+[^\f\n\r\t\v\u0020\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]
+
 ///////////////////NOTE THIS IS A .js THE NEXT WILL BE .json
 
 const { Client, GatewayIntentBits, MessageEmbed } = require('discord.js');
@@ -116,16 +129,3 @@ client.login(process.env.TOKEN);
 }
 
 ///////////////////CREATE A .env https://replit.com/ FOR THE .env USE TOKEN= NO SPACES WITH BOT TOKEN AFTER = AND ClientID= AND ClientSecret= AND USE THIS AS YOUR REDIRECT http://localhost:1500/api/auth/discord/redirect WITH THE PORT=1500 ALL IN THE .env
-
-///////////////////NOTE THIS IS MY REGEX FOR DISCORD
-
-^.*([A-Za-z0-9]+( [A-Za-z0-9]+)+).*[A-Za-z]+.*$
-^<#(?<id>\d{17,20})>$
-(?<subdomain>\w+)\.?(?<hostname>dis(?:cord)?(?:app|merch|status)?)\.(?<tld>com|g(?:d|g|ift)|(?:de(?:sign|v))|media|new|store|net)
-[a4]?+\s*[b8]+\s*c+\s*d+\s*[e3]?+\s*f+\s*[g9]+\s*h+\s*[i1l]?+\s*j+\s*k+\s*[l1i]+\s*(m|nn|rn)+\s*n+\s*[o0]?+\s*p+\s*q+\s*r+\s*[s5]+\s*[t7]+\s*[uv]?+\s*v+\s*(w|vv|uu)+\s*x+\s*y+\s*z+\s*0+\s*9+\s*8+\s*7+\s*6+\s*5+\s*4+\s*3+\s*2+\s*1+
-^https?:\/\/
-^<@&(?<id>\d{17,20})>$
-^<@!?(?<id>\d{17,20})>$
-^wss?:\/\/
-(?<url>^https:\/\/(?:(?:canary|ptb).)?discord(?:app)?.com\/api(?:\/v\d+)?\/webhooks\/(?<id>\d+)\/(?<token>[\w-]+)\/?$)
-[^\f\n\r\t\v\u0020\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]
